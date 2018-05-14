@@ -1,0 +1,34 @@
+{
+ "$class": "org.acme.landregistry.BuyingRealEstate",
+ "buyer": "resource:org.acme.landregistry.PrivateIndividual#PERSON002",
+ "seller": "resource:org.acme.landregistry.PrivateIndividual#PERSON001",
+ "realEstate": "resource:org.acme.landregistry.RealEstate#TITLE001"
+}
+
+
+{
+  "$class": "org.acme.landregistry.RealEstate",
+  "id": "TITLE001",
+  "address": "SpencerPlaza",
+  "squareMeters": 2000,
+  "price": 100,
+  "owner": "resource:org.acme.landregistry.PrivateIndividual#PERSON001"
+}
+
+
+{
+  "$class": "org.acme.landregistry.PrivateIndividual",
+  "id": "PERSON001",
+  "name": "Subhashini",
+  "address": "Chennai",
+  "balance": 10000
+}
+
+
+{
+  "$class": "org.acme.landregistry.PrivateIndividual",
+  "id": "PERSON002",
+  "name": "Hemalatha",
+  "address": "Coimbatore",
+  "balance": 1000
+}

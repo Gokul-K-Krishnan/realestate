@@ -1,0 +1,23 @@
+namespace org.acme.landregistry
+
+participant Individual identified by id {
+  o String id
+  o String name
+}
+
+
+asset Property identified by id {
+  o String id
+  o String info
+  o Integer mls
+  o String url
+  o String location
+  --> Individual owner
+}
+
+
+transaction PropertyLedger {
+  --> Individual buyer
+  --> Individual seller
+  --> Property property
+}
